@@ -335,3 +335,14 @@ CodeGrade will use the same test suite as the test suite included.
 
 Once all tests are passing, commit and push your work using `git` to submit to CodeGrade through Canvas.
 
+---
+
+## Developer Notes
+
+- All model and route functionality implemented per tests.
+- Database created and migrated using Flask-Migrate.
+- Seeded with initial earthquake data for querying.
+- Added:
+  - GET /earthquakes/<int:id> → Returns single quake or 404 JSON error.
+  - GET /earthquakes/magnitude/<float:magnitude> → Returns count + filtered quake list.
+- Code is structured for easy frontend integration and future expansion.
